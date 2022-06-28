@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titel of tab  -->
+    <title>Instagram</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="img/png" href="img/icons/logo-favicon.png">
+
+    <!--CSS-data-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+
+    <!-- Javascript-data -->
+    <script src="javascript/script.js"></script>
+    <script src="javascript/templates.js"></script>
+    <script src="javascript/posts.js"></script>
+    <script src="javascript/comments.js"></script>
+
+</head>
+
+<body onload="onload()">
+    <div w3-include-html="templates/header.html"></div>
+    </div>
+    <!--OVERVIEW-->
+    <div class="overview" id="overview">
+        <!--POSTS-->
+        <div class="posts" id="posts">
+            <div class="user-section">
+                <div class="user-center">
+                    <div class="user-header" id="userHeader"></div>
+                </div>
+            </div>
+        </div>
+        <!--PROFILE INFO SECTION HEADER-->
+        <div class="profile-info-section" id="profileInfo"></div>
+        <!--COMMENTS SECTION-->
+        <div class="all-comments-section d-none" id="allCommentsSection">
+            <div class="all-comments" id="allComments">
+                <div class="close-button-section">
+                    <div class="close-btn"></div>
+                </div>
+            </div>
+        </div>
+        <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>
